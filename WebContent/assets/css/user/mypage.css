@@ -1,0 +1,254 @@
+@charset "UTF-8";
+* {
+    font-family: 'NanumGothic';
+    margin: 0px;
+    padding: 0px;
+}
+
+img {
+    width: 120px;
+    height: 120px;
+}
+
+.main {
+    display: flex;
+    justify-content: center;
+    padding: 100px 16px;
+    width: 100%;
+}
+
+.content {
+    display: flex;
+}
+
+.title-wrap {
+    display: flex;
+}
+
+.left-wrap {
+    margin: 0 24px 0 0;
+    width: 246px;
+}
+
+.user-box {
+    box-shadow: 0 0 16px #00000014;
+    border-radius: 8px;
+}
+
+.user-info {
+    padding: 24px 24px 40px;
+    border-bottom: 1px solid #f0f0f0;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.user-name {
+    display: flex;
+    align-items: center;
+    width: calc(100% - 26px);
+    font-weight: 700;
+    font-size: 25px;
+}
+
+.edit {
+    width: 26px;
+    text-align: right;
+    font-size: 13px;
+    font-weight: 700;
+}
+
+.edit a {
+    text-decoration: none;
+    color: black;
+}
+
+.write-box {
+    display: flex;
+    /* justify-content: flex-start; */
+    align-items: center;
+    padding: 0 28px;
+    height: 65px;
+    cursor: pointer;
+    background-color: #f8f8f8;
+    font-weight: 600;
+}
+
+.check-box {
+    display: flex;
+    align-items: center;
+    padding: 0 28px;
+    height: 65px;
+    color: #838383;
+}
+
+.check-guide {
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.certify-box {
+    display: flex;
+    align-items: center;
+    padding: 0 28px;
+    height: 65px;
+}
+
+.certify-phone {
+    color: #838383;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.village-box {
+    display: flex;
+    align-items: center;
+    padding: 0 28px;
+    height: 65px;
+}
+
+.certify-village {
+    color: #838383;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.check-box:hover, .certify-box:hover {
+    background-color: #f8f8f8;
+    border-bottom: 1px solid #f0f0f0;
+    border-top: 1px solid #f0f0f0;
+}
+
+.village-box:hover {
+    background-color: #f8f8f8;
+    border-top: 1px solid #f0f0f0;
+}
+
+.sign-out {
+    margin-top: 24px;
+    text-align: center;
+}
+
+.sign-out span {
+    color: #838383;
+    cursor: pointer;
+    font-weight: 400;
+}
+
+.title-wrap {
+    width: 700px;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 0 24px #00000014;
+    border-radius: 8px;
+    /* border: 1px solid yellow; */
+}
+
+.subscription {
+    min-width: 700px;
+    box-shadow: 0 0 24px #00000014;
+    border-radius: 8px;
+    transition: transform 0.9s;
+    /* transform: translate(-700px); */
+}
+
+.title {
+    padding-top: 134px;
+    font-size: 42px;
+    font-weight: 500;
+    line-height: 54px;
+    text-align: center;
+}
+
+.info-wrap {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 80px;
+}
+
+.text {
+    margin-top: 10px;
+    font-weight: 600;
+}
+
+.search {
+    margin: 120px 0;
+    display: flex;
+    justify-content: center;
+}
+
+button[type='button'] {
+    background-color: black;
+    color: white;
+    border-radius: 8px;
+    height: 60px;
+    width: 195px;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+button[type='button'] a {
+    text-decoration: none;
+    color: white;
+}
+
+.write-content {
+    box-shadow: 0 0 16px #00000014;
+    border-radius: 8px;
+    min-width: 700px;
+    text-align: center;
+    padding-top: 310px;
+    /* transform: translate(-700px); */
+    transition: transform 0.9s;
+}
+
+.write-content p {
+    font-size: 18px;
+}
+
+.select-guide {
+    min-width: 700px;
+    box-shadow: 0 0 16px #00000014;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.select {
+    padding-top: 200px;
+}
+
+#guide {
+    width: 300px;
+    height: 40px;
+    font-size: 18px;
+    font-weight: 600;
+    border-radius: 8px;
+    border: 2px solid black;
+    margin-bottom: 60px;
+    cursor: pointer;
+}
+
+option {
+    text-align: center;
+    overflow: hidden;
+}
+
+.guide-content {
+    font-weight: 600;
+}
+
+.guide-content p {
+    display: inline-block;
+    border-bottom: 2px solid gray;
+    padding: 3px;
+}
+
+.day p {
+    padding: 300px 63px 0 0;
+    text-align: right;
+}
+
+p>span {
+    text-align: right;
+}

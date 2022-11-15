@@ -1,0 +1,93 @@
+@charset "UTF-8";
+body {
+    font-family: 'Spoqa Han Sans Neo';
+    margin: 0 auto;
+}
+
+* {
+    margin: 0;
+}
+
+main {
+    margin-top: 102px;
+    padding-bottom: 70px;
+}
+
+li{
+    list-style-type: none;
+}
+
+.category{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 1px solid #f0f0f0;
+}
+
+.category_list{
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    height: 62px;
+    width: 100%;
+    max-width: 1140px;
+    overflow: hidden;
+
+}
+
+.category_list li{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    min-width: 12.5%;
+    font-size: 18px;
+    font-weight: 400;
+    color: #838383;
+    height: 100%;
+}
+
+.list_select{
+    font-weight: 700 !important;
+    color: #1c1c1c !important;
+    border-bottom: 7px solid #1c1c1c;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+    width: 245px;
+    height: 245px;
+}
+
+.list{
+    display: flex;
+    justify-content: center;
+    margin-top: 120px;
+}
+
+.list_content{
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1140px;
+    width: 100%;
+}
+
+.list_content li{
+    cursor: pointer;
+    margin: 38px 20px;
+    width: calc(25% - 40px);
+}
+
+.title{
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+    color: #838383;
+}
+
+.cost{
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 30px;
+}

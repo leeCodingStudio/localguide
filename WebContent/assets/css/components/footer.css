@@ -1,0 +1,316 @@
+@charset "UTF-8";
+@import url(//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSansNeo.css);
+
+footer{
+    position: relative;
+    /* width: 1690.67px; */
+    width: 100%;
+    height: 319px;
+    background-color: #1c1c1c;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 48px;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    vertical-align: baseline;
+    font-family: 'Spoqa Han Sans Neo', 'sans-serif';
+    bottom: 0;
+    overflow: visible;
+    clear: both;
+    padding-bottom: 48px;
+    /* padding-left: 275px;
+    padding-right: 275px; */
+}
+
+div.footer-top{
+    /* width: 1100px; */
+    width: 96.492%;
+    height: 24px;
+    border-bottom: 1px solid #838383;
+    display: block;
+    padding: 28px 20px;
+}
+
+div.footer-link-list{
+    display: flex;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    color: #f0f0f0;
+    font-size: 14px;
+    /* width: 1100px; */
+    width: 100%;
+    height: 24px;
+    vertical-align: baseline;
+}
+
+.footer-links{
+    padding: 0;
+    line-height: 24px;
+    font-weight: 400;
+    color: #fff;
+    cursor: pointer;
+    text-align: center;
+    display: block;
+}
+
+.link1{
+    width: 51.52px;
+    height: 24px;
+}
+
+.link2{
+    width: 80px;
+    height: 24px;
+    margin-left: 50px;
+}
+
+.link3{
+    width: 180px;
+    height: 24px;
+    margin-left: 50px;
+}
+
+.footer-middle{
+    /* width: 1108px; */
+    width: 100%;
+    height: 144px;
+    padding: 0 16px;
+    /* justify-content: space-between; */
+    margin: 0;
+    border: 0;
+    vertical-align: baseline;
+    margin-top: 30px;
+    display: flex;
+}
+
+.footer-middle-left{
+    /* width: 425.198px; */
+    width: 37%;
+    height: 144px;
+    display: block;
+    margin: 0;
+    margin-left: 0;
+    margin-right: 0;
+}
+
+#middle-top{
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 22px;
+    color: #cbcbcb;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    /* width: 425.198px; */
+    width: 100%;
+    height: 22px;
+}
+
+#middle-bottom{
+    padding: 0;
+    border: 0;
+    margin-top: 12px;
+    /* vertical-align: baseline; */
+    display: block;
+    color: #cbcbcb;
+    font-weight: 400;
+    line-height: 22px;
+    /* width: 425.198px; */
+    width: 100%;
+    height: 110px;
+    font-size: 12px;
+}
+
+#footer-middle-right{
+    width: 253.396px;
+    height: 144px;
+    font-style: normal;
+    font-stretch: normal;
+    -webkit-font-smoothing: antialiased;
+    display: block;
+    position: relative;
+    right: 0;
+    margin-left: 445px;
+}
+
+#kakao-wrapper{
+    cursor: pointer;
+    /* width: 253.396px; */
+    width: 100%;
+    height: 98px;
+    text-align: left;
+    display: block;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    margin-bottom: 16px;
+}
+
+#kakao{
+	/* TODO 안됨 */
+    background-image: url("../../img/components/kakaoChat.svg");
+    width: 60px;
+    height: 60px;
+}
+
+#kakao-text{
+    /* width: 253.4px; */
+    width: 100%;
+    height: 26px;
+    margin-top: 10px;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 26px;
+    color: #fff;
+    padding: 0;
+    border: 0;
+    display: block;
+    cursor: pointer;
+    text-align: left;
+}
+
+#content-bottom{
+    width: 253.396px;
+    height: 24px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+#content-number{
+    width: 127.438px;
+    height: 24px;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    display: block;
+}
+
+#content-time{
+    width: 97.96px;
+    height: 22px;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 22px;
+    margin-top: 0;
+    margin-left: 20px;
+    margin-right: 0;
+    color: #cbcbcb;
+    padding: 0;
+    border: 0;
+    display: block;
+}
+
+.footer-bottom{
+    /* width: 1108px; */
+    width: 95.89%;
+    height: 24px;
+    padding: 0 16px;
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    vertical-align: baseline;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 24px;
+    color: #838383;
+    text-align: left;
+}
+
+.menuOne{
+    width: 103.042px;
+    height: 24px;
+    cursor: pointer;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    display: flex;
+    left: 0;
+}
+
+.menuTwo{
+    width: 98.427px;
+    height: 24px;
+    cursor: pointer;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    display: flex;
+}
+
+.menuThree{
+    width: 137.073px;
+    height: 24px;
+    cursor: pointer;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    display: flex;
+}
+
+.menuThree{
+    width: 137.073px;
+    height: 24px;
+    cursor: pointer;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    display: flex;
+}
+
+.menuFour{
+    width: 98.427px;
+    height: 24px;
+    cursor: pointer;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    display: flex;
+}
+
+.menuFive{
+    width: 162.833px;
+    height: 24px;
+    cursor: pointer;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    display: flex;
+}
+
+.check{
+    margin-right: 20px;
+    margin-left: 20px;
+    content: "|";
+    color: #838383;
+    height: 24px;
+    display: flex;
+}
+
+.menuSix{
+    /* width: 334.229px; */
+    width: 30.5%;
+    height: 24px;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+    color: #838383;
+    /* margin-left: 170px; */
+    margin-left: 15.5%;
+    position: relative;
+    right: -50px;
+}
+
+span.bold{
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 24px;
+}

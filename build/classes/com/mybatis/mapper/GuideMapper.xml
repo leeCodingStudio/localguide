@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "https://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="guide">
+<select id="getTotal" resultType="_long">
+		select count(guide_id) from tbl_guide
+	</select>
+	
+	<select id="selectAll" parameterType="guideParameterVO" resultType="guideVO">
+		select guide_id, guide_title, guide_region, guide_cost from tbl_guide
+		<where>
+			<if test="mapStringString.selectLocal != '전체'.toString()">
+				guide_region = #{mapStringString.selectLocal}
+			</if>
+		</where>
+		order by guide_id desc
+		limit #{mapStringLong.startContentNumber}, #{mapStringLong.contentNumbers}
+	</select>
+	
+	<insert id="guideWrite" parameterType="guideVO">
+		insert into tbl_guide (guide_id, user_id, guide_title, guide_content, guide_date_post, guide_region, guide_region_detail, guide_date_start, guide_date_expire, guide_cost, guide_chat_link)
+		values(#{guideId}, #{userId}, #{guideTitle}, #{guideContent}, #{guideDatePost}, #{guideRegion}, #{guideRegionDetail}, #{guideDateStart}, #{guideDateExpire},#{guideCost}, #{guideChatLink})
+	</insert>
+	
+	<select id="getGuideCalendar" parameterType="guideVO" resultType="guideVO">
+		select * from tbl_guide where guide_id = #{guideId}
+	</select>
+</mapper>

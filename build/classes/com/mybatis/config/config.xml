@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE configuration PUBLIC "-//mybatis.org//DTD Config 3.0//EN" "https://mybatis.org/dtd/mybatis-3-config.dtd">
+
+<configuration>
+	<!-- 각 mapper에서 DB와 통신할 때 VO의 필드명(카멜케이스)와 db의 테이블컬럼명(스네이크)를 자동변환 -->
+	<settings>
+		<setting name="mapUnderscoreToCamelCase" value="true"/>
+	</settings>
+	
+	<!-- 각mapper.xml에서 전달받을 parameterType을 설정 -->
+	<typeAliases>
+		<typeAlias type="com.localGuide.app.guide.vo.GuideVO" alias="guideVO"/>
+		<typeAlias type="com.localGuide.app.guideImg.vo.GuideImgVO" alias="guideImgVO"/>
+		<typeAlias type="com.localGuide.app.guideJoin.vo.GuideJoinVO" alias="guideJoinVO"/>
+		<typeAlias type="com.localGuide.app.GuideParameterVO" alias="guideParameterVO"/>
+		<typeAlias type="com.localGuide.app.user.vo.UserVO" alias="userVO"/>
+		<typeAlias type="com.localGuide.app.zipcode.vo.ZipCodeVO" alias="zipCodeVO"/>
+		<typeAlias type="com.localGuide.app.admin.dto.GuideDTO" alias="guideDTO"/>
+	</typeAliases>
+
+	<environments default="mysql">
+		<environment id="mysql">
+			<transactionManager type="JDBC"/>
+			<dataSource type="POOLED">
+				<property name="driver" value="com.mysql.cj.jdbc.Driver"/>
+				<!-- 아래 value값 sql의 db이름과 동일하게 -->
+				<property name="url" value="jdbc:mysql://localhost:3306/localguide"/>
+				<property name="username" value="root"/>
+				<property name="password" value="1234"/>
+			</dataSource>
+		</environment>
+	</environments>
+	
+	<mappers>
+		<mapper resource="com/mybatis/mapper/AdminMapper.xml"/>
+		<mapper resource="com/mybatis/mapper/GuideMapper.xml"/>
+		<mapper resource="com/mybatis/mapper/UserMapper.xml"/>
+	</mappers>
+</configuration>

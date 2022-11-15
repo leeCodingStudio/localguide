@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "https://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="admin">
+
+	<select id="user" parameterType="map" resultType="userVO">
+		<!-- SQL문 -->
+		select user_id, user_name, user_nickname, user_email, user_phone_number, user_date_join, user_gender, user_status, user_detail
+		from tbl_user
+		order by user_id asc
+		limit #{startRow}, #{rowCount}
+	</select>
+
+<!-- 	<select id="user" resultType="userVO">
+		SQL문
+		select user_id, user_name, user_nickname, user_email, user_phone_number, user_date_join, user_gender, user_status, user_detail
+		from tbl_user
+	</select> -->
+	
+	<select id="guide" resultType="guideDTO">
+		select guide_id, guide_title, g.user_id, guide_region, guide_region_detail, guide_content, guide_date_post, guide_date_update, guide_date_delete, guide_status
+		from tbl_guide g join tbl_user u
+		on g.user_id = u.user_id
+		order by guide_id asc
+		limit #{startRow}, #{rowCount}
+	</select> 
+
+	<!-- <select id="guide" resultType="guideDTO">
+		select guide_id, guide_title, g.user_id, guide_region, guide_region_detail, guide_content, guide_date_post, guide_date_update, guide_date_delete, guide_status
+		from tbl_guide g join tbl_user u
+		on g.user_id = u.user_id
+	</select> --> 
+	
+	<delete id="deleteUser" parameterType="_int">
+		delete from tbl_user
+		where user_id = ${userId}
+	</delete>
+
+	<delete id="deleteGuide" parameterType="_int">
+		delete from tbl_guide
+		where guide_id = ${guideId}
+	</delete>
+	
+	<select id="getTotal" resultType="_int">
+		select count(user_id) from tbl_user
+	</select>
+
+	<select id="getTotalGuide" resultType="_int">
+		select count(guide_id) from tbl_guide
+	</select>
+</mapper>

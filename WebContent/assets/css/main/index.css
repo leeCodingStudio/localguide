@@ -1,0 +1,329 @@
+@charset "UTF-8";
+@import url("https://spoqa.github.io/spoqa-han-sans/css/SpoqaHanSansNeo.css");
+
+/* 전체 화면  */
+body{
+    margin: 0 auto;
+    /* clear: both; */
+    width: 100%;
+    height: 100%;
+    /* background-color: darkmagenta; */
+    /* background-color: #f5f5f5; */
+    font-family: 'Spoqa Han Sans Neo', 'sans-serif';
+}
+
+main{
+    display: block;
+    /* background-color: deeppink; */
+    width: 100%;
+    height: 100%;
+}
+
+/* --------------banner start------------- */
+
+section.container {
+    width: 80vw;
+    /* width: 90vw; */
+    margin: 0 auto;
+    overflow: hidden;
+    position: relative;
+    margin-top: 5%;
+}
+
+div.banner {
+    width: 640vw;
+    /* width: 720vw; */
+    /* transform: translate(-90vw); */
+}
+
+div.banner div {
+    width: 80vw;
+    /* width: 90vw; */
+    float: left;
+}
+
+div img {
+    width: 100%;
+}
+
+div.arrow {
+    position: absolute;
+    font-size: 2rem;
+    width: 80px;
+    height: 80px;
+    /* background-color: #0000002e; */
+    cursor: pointer;
+    border-radius: 50%;
+    text-align: center;
+    top: 45%;
+    line-height: 20px;
+    
+}
+
+div.next {
+    right: 0%;
+}
+
+div.prev {
+    z-index: 1;
+    left: 0%;
+}
+
+div.btns {
+    width: 80vw;
+    /* width: 90vw; */
+    text-align: center;
+    position: absolute;
+    bottom: 10px;
+}
+
+div.btns .btn {
+    border-radius: 30%;
+    /* border: 0.5px solid #f0f0f0; */
+    /* border: 0.5px solid white; */
+    border: 0.0px solid white;
+    width: 10px;
+    height: 6px;
+}
+
+/* --------------banner end------------- */
+
+/* area */
+#content-category{
+    position: relative;
+    display: block;
+    /* background-color: aquamarine; */
+    /* width: 1658.67px; */
+    width: 100%;
+    height: 132px;
+    padding-top: 70px;
+    padding-bottom: 70px;
+    /* padding-left: 16px; */
+    /* padding-right: 16px; */
+    /* top: 452px; */
+    font-family: 'Spoqa Han Sans Neo', 'sans-serif';
+    color: #838383;
+}
+
+#category{
+    background-color: white;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    width: 706px;
+    height: 132px;
+    vertical-align: baseline;
+    /* margin-left: 476.335px;
+    margin-right: 476.335px; */
+    margin-left: 28.15%;
+    margin-right: 28.15%;
+    font-size: 18px;
+}
+
+.area{
+    display: flex;
+    width: 128px;
+    height: 28px;
+    padding: 14px 16px;
+    margin: 4px 6px;
+    justify-content: center;
+    align-items: center;
+    border: 1.5px solid #f0f0f0;
+    border-radius: 2px;
+    cursor: pointer;
+    vertical-align: baseline;
+}
+/* area end */
+
+/* product start */
+#content-product{
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    width: 100%;
+    /* height: 686px; */
+    height: 2500px;
+}
+
+#content-product-box{
+    max-width: 1140px;
+    width: 1092px;
+    height: 686px;
+    padding: 0 24px;
+    margin: 0;
+    border: 0;
+    display: block;
+}
+
+.top1{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    display: block;
+    white-space: pre;
+    color: #1c1c1c;
+    width: 1092px;
+    width: 100px;
+    font-family: 'Spoqa Han Sans Neo', 'sans-serif';
+    font-size: 38px;
+    font-weight: 700;
+    letter-spacing: -3%;
+    line-height: 50px;
+}
+
+.top2{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    display: block;
+    white-space: pre;
+    color: #838383;
+    width: 1092px;
+    width: 30px;
+    font-family: 'Spoqa Han Sans Neo', 'sans-serif';
+    font-size: 20px;
+    font-weight: 400;
+    letter-spacing: -3%;
+    line-height: 30px;
+    margin-top: 20px;
+}
+
+.product-wrapper{
+    padding: 0;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: nowrap;
+    width: 100%;
+    margin: 0;
+    border: 0;
+    height: 310px;
+    margin-top: 50px;
+}
+
+.items{
+    flex: 0 0 auto;
+    margin-left: 0;
+    margin: 0 16px;
+    width: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    cursor: pointer;
+    padding: 0;
+    border: 0;
+    height: 310px;
+    /* background-color: black; */
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 5px 10px 50px #00000014;
+}
+
+.item1{
+    margin-left: 0;
+}
+
+.item2{
+
+}
+
+.item3{
+
+}
+
+.item4{
+
+}
+
+.item5{
+    margin-left: 0;
+}
+
+.item6{
+
+}
+
+.item7{
+
+}
+
+.item8{
+
+}
+
+.product-image{
+    width: 250px;
+    height: 250px;
+    max-width: 100%;
+    display: block;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    margin: 0 8px;
+    cursor: pointer;
+    /* background-color: aqua; */
+}
+
+.product-name{
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 28px;
+    color: #838383;
+    white-space: nowrap;
+    max-width: 100%;
+    /* margin: 0; */
+    padding: 0;
+    border: 0;
+    display: block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    cursor: pointer;
+    width: 197.604px;
+    height: 28px;
+    /* background-color: chartreuse; */
+    margin-top: 5px;
+}
+
+product-info{
+    color: #1c1c1c;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 30px;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    display: block;
+    display: flex;
+    cursor: pointer;
+    width: 82.906px;
+    height: 30px;
+    /* background-color: aquamarine; */
+
+}
+
+.change-item{
+    margin-top: 100px;
+}
+
+/* product end*/
+
+/* 추가 */
+.area {
+  cursor: pointer;
+}
+
+.area:hover {
+  color: #3cc;
+}

@@ -1,0 +1,153 @@
+@charset "UTF-8";
+@import url(//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSansNeo.css);
+
+header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    /* top: 0; */
+    /* padding: 0 16px; */
+    /* width: 1658.67px; */
+    width: 100%;
+    height: 68px;
+    font-family: 'Spoqa Han Sans Neo', 'sans-serif';
+    vertical-align: baseline;
+    margin: 0 auto;
+
+}
+
+#header-wrapper{
+    /* justify-content: flex-start; */
+    position: relative;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    /* width: 1140px; */
+    width: 67.6%;
+    height: 48px;
+}
+
+#content{
+    display: flex;
+    position: relative;
+    margin: 0 auto;
+    padding: 0;
+    border: 0;
+}
+
+#left{
+    display: flex;
+    margin: 12px auto;
+    padding: 0;
+    border: 0;
+    /* width: 561.302px; */
+    width: 50%;
+    height: 24px;
+    position: absolute;
+    
+}
+
+.menu{
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+    color: #838383;
+    height: 24px;
+    margin: 0 auto;
+}
+
+#logo{
+    cursor: pointer;
+    display: block;
+    width: 99.198px;
+    font-size: 24px;
+    height: 24px;
+    margin-right: 40px;
+    position: relative;
+    top: -6.5px;
+    font-weight: 700;
+}
+
+
+.one{
+    display: block;
+    width: 55.425px;
+    margin-right: 40px;
+}
+
+.two{
+    display: block;
+    width: 55.425px;
+    margin-right: 40px;
+}
+
+.three{
+    display: block;
+    width: 55.425px;
+    margin-right: 40px;
+}
+
+.four{
+    display: block;
+    width: 55.425px;
+    margin-right: 40px;
+}
+
+div#right{
+    position: absolute;
+    display: flex;
+    /* width: 230px; */
+    width: 30.8%;
+    height: 48px;
+    right: -235px;
+    text-align: center;
+    color: #1c1c1c;
+}
+
+#rightmenu{
+    cursor: pointer;
+    display: flex;
+    width: 180px;
+    height: 24px;
+    font-size: 14px;
+    margin-top: 13px;
+}
+
+#login{
+    width: 43px;
+    margin-right: 20px;
+}
+
+#myPage{
+    width: 100px;
+    margin-right: 20px;
+}
+
+
+/* #hart-wrapper{
+    cursor: pointer;
+    margin: 0;
+    position: relative;
+    display: inline-block;
+    vertical-align: baseline;
+    top: -5px;
+} */
+
+/* #hart{
+    width: 36px;
+    height: 36px;
+    
+
+} */
+
+#member{
+    width: 55px;
+    margin-right: 40px;
+}
+
+#logout{
+	width: 80px;
+    margin-right: 40px;
+}
